@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script defer src="./assets/script.js"></script>
+  <title>QUIZ</title>
+</head>
+
+
+<body>
+    <div class="highscores-wrap">
+        <div class="highscores">
+            <h1 onclick="showHighscores()">Highscores</h1>
+            <div class="highscores-show">
+
+            </div>
+        </div>
+    </div>
+
+
+ 
+  <div class="container">
+
+    <div class="block content">
+    
+      <div class="wrapper">
+
+        <form id='form-result' class="hide" action="">
+          <div class="SP-container">
+            <div class="modal-text modal-text-bigger">Done !</div>
+            <div class="modal-text">Right answers:</div>
+            <div id="count">Start</div>
+            <div class="modal-text"><span id="right-answers" class="count"> 12 </span> of <span id="all-questions" class="count">count-of-questions</span> (<span id="answers-percent"></span>%)</div> 
+            <div class="save-score-wrap">
+                <input type="text" placeholder="Initials" id="initials">
+                <label for="save-score">Save Highscore? </label>
+                <div id="save-score" name="save-score">Save Score</div>
+            </div>
+          </div>
+        </form>
+
+          <div id="question-container" class="hide">
+            <header>
+            <div class="number-of-question-text">Question № <span id="current-question">YYY</span> of <span id="all-questions2">XXX</span></div>
+            <p id="timer">Time Left</p>
+            </header>
+            <div id="question">Question</div>
+            <div id="answer-buttons">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="start-btn" class="start-btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+          </div>
+
+        </div>
+
+      </div>
+  
+
+    </div>
+
+</body>
+</html>
